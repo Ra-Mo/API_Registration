@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activation</title>
+</head>
+<body>
+<form method="POST">
+
+    {% csrf_token %}
+
+    <div class="container">
+        <h1>Activation</h1>
+        <p>Please enter the code sent to your email.</p>
+        <hr>
+
+            <label for="code"><b>Activation code</b></label> <br>
+            <input type="text" placeholder="Enter code" name="code" id="code" required> <br>
+
+        <hr>
+
+            <button type="submit" class="activatebtn">Activate</button>
+    </div>
+
+
+</form>
+
+</body>
+</html>
+
